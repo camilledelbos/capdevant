@@ -1,7 +1,7 @@
 <h1>Liste des articles</h1>
 
 <% @articles.each do |a|%>
-	</br><%= a.name %> 
+	</br><%= link_to h(a.name), article_path(a.id) %> 
 <% end %>
 
 
