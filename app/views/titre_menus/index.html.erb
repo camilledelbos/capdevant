@@ -1,0 +1,25 @@
+<h2>Modifier menu</h2>
+
+<table>
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Supprimer</th>
+        <th>Editer</th>
+      </tr>
+    </thead>
+	<tbody>
+		<% @titre_menus.each do |t|%>
+			<tr>
+				<td><%= t.name %></td>
+				<td><%= link_to 'x', t, method: :delete %></td>
+				<td><%= link_to 'Edit', t, method: :patch %></td>
+			</tr>	
+		<% end %>
+	</tbody>
+</table>
+
+</br>
+<%= link_to 'Créer un nouveau titre', new_titre_menu_path %>
+
+

@@ -4,13 +4,20 @@
 </div>
 
 <nav class="top-bar" data-topbar>
-     <section class="top-bar-section">
+    <section class="top-bar-section">
+	    <ul class="left">
+	      <% unless @titre_menus.nil? %>
+			  <% @titre_menus.each do |t|%>
+			 	<li><a href="#"><%= t.name %></a></li>
+			  <% end %>
+		  <% end %>
+			<li><%= link_to 'Modifier menu', titre_menus_path %></li>
 
-    <ul class="left">
-      <li><a href="#">Titre1-MenuHoriz</a></li>
-      <li><a href="#">Titre2-MenuHoriz</a></li>
-      <li><a href="#">Titre3-MenuHoriz</a></li>
-      <li><a href="#">Titre4-MenuHoriz</a></li>
-    </ul>
-</section>
+	    </ul>
+	</section>
 </nav>
+
+
+
+
+

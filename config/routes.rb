@@ -1,4 +1,6 @@
 Capdevant::Application.routes.draw do
+  resources :titre_menus
+
   resources :articles
 
   devise_for :users
