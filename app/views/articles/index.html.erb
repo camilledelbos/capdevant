@@ -1,0 +1,9 @@
+<h1>Liste des articles</h1>
+
+<% @articles.each do |a|%>
+	</br><%= a.name %> 
+<% end %>
+
+
+</br>
+<%= link_to 'Créer un nouvel article', new_article_path %>
