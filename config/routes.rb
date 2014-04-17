@@ -3,7 +3,7 @@ Capdevant::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :titre_menus
+  resources :item_menus
 
   resources :articles
 

@@ -29,7 +29,7 @@ before_filter :set_params
 	end
 
 	def set_params
-		@titre_menus = TitreMenu.all
+		@item_menus = ItemMenu.all
 	end
 
 	private

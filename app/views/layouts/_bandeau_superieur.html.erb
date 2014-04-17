@@ -6,12 +6,12 @@
 <nav class="top-bar" data-topbar>
     <section class="top-bar-section">
 	    <ul class="left">
-	      <% unless @titre_menus.nil? %>
-			  <% @titre_menus.each do |t|%>
+	      <% unless @item_menus.nil? %>
+			  <% @item_menus.each do |t|%>
 			 	<li><a href="#"><%= t.name %></a></li>
 			  <% end %>
 		  <% end %>
-			<li><%= link_to 'Modifier menu', titre_menus_path %></li>
+			<li><%= link_to 'Modifier menu', item_menus_path %></li>
 
 	    </ul>
 	</section>
