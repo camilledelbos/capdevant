@@ -17,8 +17,9 @@ group :development do
 	gem 'guard-rails'
 end
 
-# Devise
+# Compte et administration
 gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Debug
 gem 'pry-rails'

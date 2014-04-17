@@ -1,28 +1,22 @@
 class ArticlesController < ApplicationController
 
+before_filter :set_params
+
 	def index
-		### XXX repetiion de TitreMenu.all ###
-		@titre_menus = TitreMenu.all
 		@articles = Article.all
 	end
 
 	def new
-		### XXX repetiion de TitreMenu.all ###
-		@titre_menus = TitreMenu.all
 		@article = Article.new
 	end
 
 	def create
 		@article = Article.new(article_params)
-		### XXX deux versions : la plus efficace? ###
-		# Article.find(article_params)
 		@article.save
 		redirect_to root_path
 	end
 
 	def show
-		### XXX repetiion de TitreMenu.all ###
-		@titre_menus = TitreMenu.all
 		@article = Article.find(params[:id]) 
 	end
 
@@ -32,6 +26,10 @@ class ArticlesController < ApplicationController
 
 	def update
 		
+	end
+
+	def set_params
+		@titre_menus = TitreMenu.all
 	end
 
 	private
