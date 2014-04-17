@@ -1,22 +1,28 @@
 class ArticlesController < ApplicationController
 
 	def index
+		### XXX repetiion de TitreMenu.all ###
+		@titre_menus = TitreMenu.all
 		@articles = Article.all
 	end
 
 	def new
+		### XXX repetiion de TitreMenu.all ###
+		@titre_menus = TitreMenu.all
 		@article = Article.new
 	end
 
 	def create
 		@article = Article.new(article_params)
-		## XXXX ##
+		### XXX deux versions : la plus efficace? ###
 		# Article.find(article_params)
 		@article.save
 		redirect_to root_path
 	end
 
 	def show
+		### XXX repetiion de TitreMenu.all ###
+		@titre_menus = TitreMenu.all
 		@article = Article.find(params[:id]) 
 	end
 
