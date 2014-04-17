@@ -7,5 +7,5 @@ login: leon
 mdp: mathilda
 
 Active admin
-login: adminøexample.com
+login: admin@example.com
 mdp: password
