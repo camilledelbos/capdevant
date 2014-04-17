@@ -12,8 +12,17 @@
   </head>
 
   <body>
-	<%= render 'layouts/bandeau_superieur' %>
-    <%= yield %>
+    <div class="row">
+      <div class="small-12 large-12 column">
+        <%= render 'layouts/bandeau_superieur' %>
+      </div>
+      <div class="small-8 large-8 column">
+        <%= yield %>
+      </div>
+      <div class="small-4 large-4 column">
+        <%= render 'layouts/sidebar' %>
+      </div>
+    </div>  
     <%= javascript_include_tag "application" %>
   </body>
 </html>

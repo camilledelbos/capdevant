@@ -1,0 +1,7 @@
+<ul>
+  <% unless @sidebar_menu_items.nil? %>
+	  <% @sidebar_menu_items.each do |t|%>
+	 	<li><a href="#"><%= t.name %></a></li>
+	  <% end %>
+  <% end %>
+</ul>

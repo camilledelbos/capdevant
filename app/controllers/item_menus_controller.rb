@@ -1,5 +1,3 @@
 class ItemMenusController < ApplicationController
-
-		
 end
 

@@ -13,7 +13,12 @@ ActiveAdmin.register ItemMenu do
   #  permitted
   # end
 
-  # TODO regarder avec Yannick ou tout ce qui suit se met (dans /admin ou dans /controller ?)
-
+  form do |f|
+    f.inputs "ItemMenu" do     
+        f.input :name
+        f.input :zone, :label => "Pour quel menu?", :as => :select, :collection => [:main, :sidebar, :footer]
+      end
+      f.actions
+    end
   
 end

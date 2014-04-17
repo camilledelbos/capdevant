@@ -3,7 +3,3 @@
 <% @articles.each do |a|%>
 	</br><%= link_to h(a.name), article_path(a.id) %> 
 <% end %>
-
-
-</br>
-<%= link_to 'Créer un nouvel article', new_article_path %>

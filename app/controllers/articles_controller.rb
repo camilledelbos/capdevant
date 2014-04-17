@@ -1,6 +1,5 @@
 class ArticlesController < ApplicationController
 
-before_filter :set_params
 
 	def index
 		@articles = Article.all
@@ -26,10 +25,6 @@ before_filter :set_params
 
 	def update
 		
-	end
-
-	def set_params
-		@item_menus = ItemMenu.all
 	end
 
 	private
