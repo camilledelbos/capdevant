@@ -1,4 +1,6 @@
 Capdevant::Application.routes.draw do
+  resources :item_menus
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :titre_menus
