@@ -1,3 +1,11 @@
 == CAP DEVANT
 
-Developement en cours
+URL de test : http://capdevant.herokuapp.com/
+
+Basic Auth
+login: leon
+mdp: mathilda
+
+Active admin
+login: adminøexample.com
+mdp: password
