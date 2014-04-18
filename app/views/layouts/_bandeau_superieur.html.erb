@@ -12,6 +12,14 @@
 			  <% end %>
 		  <% end %>
 	    </ul>
+	    <div class="right">
+	    	<%= form_tag articles_path, method: :get do %>
+			  <p>
+			    <%= text_field_tag :query, params[:query] %>
+			    <%= submit_tag "Search", name: nil %>
+			  </p>
+			<% end %>
+	    </div>
 	</section>
 </nav>
 

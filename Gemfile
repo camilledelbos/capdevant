@@ -21,6 +21,10 @@ end
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# recherche dans les articles 
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+
 # Debug
 gem 'pry-rails'
 

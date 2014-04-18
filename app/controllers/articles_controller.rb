@@ -2,7 +2,12 @@ class ArticlesController < ApplicationController
 
 
 	def index
-		@articles = Article.all
+	  if params[:query].present?
+	    response = Article.search(params[:query])
+	    @articles = response.results.map { |r| r._source }
+	  else
+	    @articles = Article.all
+	  end		
 	end
 
 	def new
