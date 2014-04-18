@@ -1,0 +1,7 @@
+<ul class="inline-list">
+  <% unless @footer_menu_items.nil? %>
+	  <% @footer_menu_items.each do |t|%>
+	 	<li><a href="#"><%= t.name %></a></li>
+	  <% end %>
+  <% end %>
+</ul>
